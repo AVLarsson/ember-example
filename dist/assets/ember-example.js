@@ -300,7 +300,9 @@
   }
 
   _exports.default = Router;
-  Router.map(function () {});
+  Router.map(function () {
+    this.route("anotherpage");
+  });
 });
 ;define("ember-example/serializers/-default", ["exports", "@ember-data/serializer/json"], function (_exports, _json) {
   "use strict";
@@ -354,7 +356,7 @@
     }
   });
 });
-;define("ember-example/templates/application", ["exports"], function (_exports) {
+;define("ember-example/templates/anotherpage", ["exports"], function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -363,10 +365,28 @@
   _exports.default = void 0;
 
   var _default = Ember.HTMLBars.template({
-    "id": "1YtrOj77",
-    "block": "{\"symbols\":[],\"statements\":[[7,\"welcome-page\",[],[[],[]],null],[1,1,0,0,\"\\n\"],[1,1,0,0,\"\\n\"],[1,0,0,0,[31,0,0,[27,[26,1,\"CallHead\"],[]],[[31,0,0,[27,[26,0,\"CallHead\"],[]],null,null]],null]]],\"hasEval\":false,\"upvars\":[\"-outlet\",\"component\"]}",
+    "id": "Cl3ElVg1",
+    "block": "{\"symbols\":[],\"statements\":[[9,\"div\",true],[12,\"class\",\"jumbo\",null],[10],[1,1,0,0,\"\\n\"],[9,\"div\",true],[12,\"class\",\"right tomster\",null],[10],[11],[1,1,0,0,\"\\n\"],[9,\"h2\",true],[10],[1,1,0,0,\"Just a test!\"],[11],[1,1,0,0,\"\\n\"],[9,\"p\",true],[10],[1,1,0,0,\"Page refreshed!\"],[11],[1,1,0,0,\"\\n\"],[11]],\"hasEval\":false,\"upvars\":[]}",
     "meta": {
-      "moduleName": "ember-example/templates/application.hbs"
+      "moduleName": "ember-example/templates/anotherpage.hbs"
+    }
+  });
+
+  _exports.default = _default;
+});
+;define("ember-example/templates/index", ["exports"], function (_exports) {
+  "use strict";
+
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.default = void 0;
+
+  var _default = Ember.HTMLBars.template({
+    "id": "Z5mQ0juD",
+    "block": "{\"symbols\":[],\"statements\":[[9,\"div\",true],[12,\"class\",\"jumbo\",null],[10],[1,1,0,0,\"\\n\"],[9,\"div\",true],[12,\"class\",\"right tomster\",null],[10],[11],[1,1,0,0,\"\\n\"],[9,\"h2\",true],[10],[1,1,0,0,\"Just a test!\"],[11],[1,1,0,0,\"\\n\"],[9,\"p\",true],[10],[1,1,0,0,\"This is obviously just a test!\"],[11],[1,1,0,0,\"\\n\"],[11]],\"hasEval\":false,\"upvars\":[]}",
+    "meta": {
+      "moduleName": "ember-example/templates/index.hbs"
     }
   });
 
